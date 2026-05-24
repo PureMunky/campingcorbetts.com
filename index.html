@@ -5,21 +5,166 @@
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Oswald:wght@400;600&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="main.css">
   <title>Camping Corbetts</title>
 </head>
 
 <body>
-  <h1>Camping Corbetts</h1>
-  <p>
-    We're the Corbett family. Come join us on our camping adventures.
-  </p>
-  <p>
-    <a href="https://instagram.com/camping_corbetts" target="instagram">
-      <img src="./images/logos/insta_small.jpg" style="vertical-align: middle; margin-right: 5px;" />camping_corbetts
+
+  <header class="poster">
+    <div class="poster-frame">
+      <div class="poster-eyebrow">Est. Outdoors &middot; The Corbett Family</div>
+      <h1>Camping<br>Corbetts</h1>
+      <div class="poster-tagline">Hike &middot; Bike &middot; Paddle &middot; Park the Camper</div>
+
+      <figure class="hero-photo">
+        <img src="./images/banner.jpg" alt="The Corbett family on the step of their camper" />
+      </figure>
+
+      <div class="hero-cta">
+        <a class="ig-button" href="https://instagram.com/camping_corbetts" target="instagram" rel="noopener">
+          <img src="./images/logos/insta_small.jpg" alt="" />
+          Follow @camping_corbetts
+        </a>
+        <div class="hero-cta-sub">Join us on Instagram for the adventures</div>
+      </div>
+    </div>
+  </header>
+
+  <section class="intro">
+    <p>
+      We're <span class="names">Phil, Ashley, and Finley</span> &mdash; chasing trails, riverbanks, and good campfires.
+    </p>
+  </section>
+
+  <section class="activities" aria-label="What we love to do">
+    <div class="activity-row">
+
+      <div class="activity">
+        <svg class="icon" viewBox="0 0 64 64" fill="currentColor" aria-hidden="true">
+          <path d="M14 40 L14 24 Q14 18 20 18 L28 18 L34 24 L46 26 Q52 27 52 33 L52 42 Q52 46 48 46 L18 46 Q14 46 14 42 Z"/>
+          <rect x="14" y="46" width="38" height="6" rx="1"/>
+          <circle cx="20" cy="55" r="2"/>
+          <circle cx="30" cy="55" r="2"/>
+          <circle cx="40" cy="55" r="2"/>
+          <line x1="22" y1="24" x2="22" y2="30" stroke="#f4e8d0" stroke-width="2"/>
+          <line x1="28" y1="24" x2="28" y2="30" stroke="#f4e8d0" stroke-width="2"/>
+        </svg>
+        <div class="label">Hiking</div>
+      </div>
+
+      <div class="activity">
+        <svg class="icon" viewBox="0 0 64 64" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+          <circle cx="16" cy="44" r="12"/>
+          <circle cx="48" cy="44" r="12"/>
+          <path d="M16 44 L28 26 L44 26 L48 44"/>
+          <path d="M28 26 L34 44"/>
+          <line x1="38" y1="22" x2="46" y2="22"/>
+          <line x1="42" y1="22" x2="42" y2="26"/>
+          <circle cx="34" cy="44" r="2" fill="currentColor"/>
+        </svg>
+        <div class="label">Bike Rides</div>
+      </div>
+
+      <div class="activity">
+        <svg class="icon" viewBox="0 0 64 64" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+          <path d="M8 40 Q32 52 56 40 L52 36 Q32 44 12 36 Z" fill="currentColor"/>
+          <line x1="14" y1="14" x2="50" y2="50"/>
+          <ellipse cx="14" cy="14" rx="5" ry="2.5" transform="rotate(-45 14 14)" fill="currentColor"/>
+          <ellipse cx="50" cy="50" rx="5" ry="2.5" transform="rotate(-45 50 50)" fill="currentColor"/>
+        </svg>
+        <div class="label">Kayaking</div>
+      </div>
+
+      <div class="activity">
+        <svg class="icon" viewBox="0 0 64 64" fill="currentColor" aria-hidden="true">
+          <path d="M6 44 L6 24 Q6 20 10 20 L44 20 Q48 20 48 24 L52 30 L56 30 Q58 30 58 32 L58 44 Q58 48 54 48 L10 48 Q6 48 6 44 Z"/>
+          <rect x="11" y="25" width="14" height="10" fill="#f4e8d0"/>
+          <rect x="29" y="25" width="14" height="10" fill="#f4e8d0"/>
+          <line x1="11" y1="40" x2="43" y2="40" stroke="#f4e8d0" stroke-width="1.5"/>
+          <circle cx="18" cy="52" r="4"/>
+          <circle cx="46" cy="52" r="4"/>
+          <circle cx="18" cy="52" r="1.5" fill="#f4e8d0"/>
+          <circle cx="46" cy="52" r="1.5" fill="#f4e8d0"/>
+        </svg>
+        <div class="label">Camping</div>
+      </div>
+
+    </div>
+  </section>
+
+  <!-- Retro WPA-style mountain scene as decorative band -->
+  <div class="scene-band" aria-hidden="true">
+    <svg class="scene" viewBox="0 0 800 280" xmlns="http://www.w3.org/2000/svg">
+      <circle cx="560" cy="120" r="56" fill="#d4a72c"/>
+      <g stroke="#d4a72c" stroke-width="4" stroke-linecap="round">
+        <line x1="560" y1="40" x2="560" y2="20"/>
+        <line x1="640" y1="120" x2="660" y2="120"/>
+        <line x1="616" y1="64" x2="630" y2="50"/>
+        <line x1="616" y1="176" x2="630" y2="190"/>
+        <line x1="504" y1="64" x2="490" y2="50"/>
+      </g>
+      <polygon points="0,260 180,90 320,200 460,80 640,260" fill="#3a6b52"/>
+      <polygon points="180,90 210,128 198,135 175,118 165,128 155,120" fill="#f4e8d0"/>
+      <polygon points="460,80 490,118 478,125 455,108 445,118 435,110" fill="#f4e8d0"/>
+      <polygon points="-20,280 120,160 260,260 400,140 540,260 700,170 820,280" fill="#2a4d3a"/>
+      <polygon points="400,140 425,170 415,175 400,162 385,175 375,168" fill="#f4e8d0"/>
+      <g fill="#1a3328">
+        <polygon points="60,280 80,230 100,280"/>
+        <polygon points="60,260 80,215 100,260"/>
+        <polygon points="60,245 80,205 100,245"/>
+        <rect x="76" y="278" width="8" height="6"/>
+
+        <polygon points="160,280 180,235 200,280"/>
+        <polygon points="160,262 180,220 200,262"/>
+        <rect x="176" y="278" width="8" height="6"/>
+
+        <polygon points="700,280 720,225 740,280"/>
+        <polygon points="700,258 720,210 740,258"/>
+        <polygon points="700,240 720,200 740,240"/>
+        <rect x="716" y="278" width="8" height="6"/>
+
+        <polygon points="610,280 625,245 640,280"/>
+        <polygon points="610,265 625,232 640,265"/>
+        <rect x="621" y="278" width="6" height="6"/>
+      </g>
+      <g>
+        <rect x="340" y="240" width="78" height="34" rx="4" fill="#e85d2f"/>
+        <rect x="346" y="248" width="20" height="14" fill="#f4e8d0"/>
+        <rect x="372" y="248" width="22" height="14" fill="#f4e8d0"/>
+        <rect x="398" y="252" width="14" height="10" fill="#f4e8d0"/>
+        <line x1="340" y1="258" x2="328" y2="266" stroke="#1a3328" stroke-width="2" stroke-linecap="round"/>
+        <circle cx="358" cy="278" r="6" fill="#1a3328"/>
+        <circle cx="400" cy="278" r="6" fill="#1a3328"/>
+      </g>
+      <g>
+        <line x1="440" y1="278" x2="468" y2="270" stroke="#5c3a21" stroke-width="3" stroke-linecap="round"/>
+        <line x1="436" y1="270" x2="464" y2="278" stroke="#5c3a21" stroke-width="3" stroke-linecap="round"/>
+        <path d="M 450 270 Q 446 258 452 250 Q 456 258 458 252 Q 462 262 456 272 Z" fill="#e85d2f"/>
+        <path d="M 451 268 Q 449 260 453 256 Q 456 262 451 268 Z" fill="#d4a72c"/>
+      </g>
+    </svg>
+  </div>
+
+  <section class="follow">
+    <div class="section-label">Don't Miss an Adventure</div>
+    <h2>Come along for the ride</h2>
+    <p class="follow-sub">
+      We share trips, trail finds, and campsite shots over on Instagram.
+    </p>
+    <a class="ig-button ig-button--inverse" href="https://instagram.com/camping_corbetts" target="instagram" rel="noopener">
+      <img src="./images/logos/insta_small.jpg" alt="" />
+      Follow @camping_corbetts
     </a>
-  </p>
-  <img src="./images/banner.jpg" style="width: 100%;" />
+  </section>
+
+  <footer>
+    &copy; The Camping Corbetts
+  </footer>
+
 </body>
 
 </html>
