@@ -1,11 +1,255 @@
+:root {
+  --cream: #f4e8d0;
+  --forest: #2a4d3a;
+  --pine: #1a3328;
+  --sunset: #e85d2f;
+  --mustard: #d4a72c;
+  --dusk: #1e3a5f;
+}
+
 * {
-  font-family: Arial, Helvetica, sans-serif;
+  box-sizing: border-box;
 }
 
 body {
   margin: 0;
+  font-family: "Oswald", "Arial Narrow", Arial, sans-serif;
+  background: var(--cream);
+  color: var(--pine);
+  line-height: 1.5;
 }
 
-h1, p {
-  margin: 10px;
+h1, h2, h3 {
+  font-family: "Bebas Neue", "Oswald", Impact, "Arial Black", sans-serif;
+  letter-spacing: 0.05em;
+  text-transform: uppercase;
+  margin: 0;
+  line-height: 1;
+}
+
+/* --- HERO POSTER --- */
+
+.poster {
+  background: var(--dusk);
+  color: var(--cream);
+  border-bottom: 8px solid var(--sunset);
+  position: relative;
+  overflow: hidden;
+}
+
+.poster-frame {
+  border: 4px solid var(--cream);
+  margin: 16px;
+  padding: 32px 24px 0;
+}
+
+.poster-eyebrow {
+  font-family: "Bebas Neue", Impact, sans-serif;
+  letter-spacing: 0.3em;
+  font-size: 14px;
+  color: var(--mustard);
+  text-align: center;
+  margin-bottom: 8px;
+}
+
+.poster h1 {
+  font-size: clamp(48px, 11vw, 120px);
+  text-align: center;
+  color: var(--cream);
+  text-shadow: 4px 4px 0 var(--sunset);
+}
+
+.poster-tagline {
+  text-align: center;
+  font-size: clamp(14px, 2.2vw, 18px);
+  letter-spacing: 0.25em;
+  text-transform: uppercase;
+  color: var(--mustard);
+  margin: 12px 0 24px;
+}
+
+/* Hero CTA */
+.hero-cta {
+  text-align: center;
+  margin: 8px 0 24px;
+}
+
+.hero-cta-sub {
+  margin-top: 10px;
+  font-size: 13px;
+  letter-spacing: 0.2em;
+  text-transform: uppercase;
+  color: var(--cream);
+  opacity: 0.85;
+}
+
+/* Shared Instagram button */
+.ig-button {
+  display: inline-flex;
+  align-items: center;
+  gap: 12px;
+  text-decoration: none;
+  font-family: "Bebas Neue", Impact, sans-serif;
+  letter-spacing: 0.2em;
+  font-size: clamp(20px, 3vw, 28px);
+  padding: 14px 28px;
+  border: 4px solid var(--mustard);
+  background: var(--mustard);
+  color: var(--pine);
+  transition: background 0.15s, color 0.15s, border-color 0.15s, transform 0.15s;
+}
+
+.ig-button:hover {
+  background: var(--sunset);
+  border-color: var(--sunset);
+  color: var(--cream);
+  transform: translateY(-2px);
+}
+
+.ig-button img {
+  width: 32px;
+  height: 32px;
+  border-radius: 4px;
+}
+
+.ig-button--inverse {
+  background: var(--cream);
+  border-color: var(--cream);
+  color: var(--forest);
+}
+
+.ig-button--inverse:hover {
+  background: var(--mustard);
+  border-color: var(--mustard);
+  color: var(--pine);
+}
+
+/* Hero photo — the focal point */
+.hero-photo {
+  margin: 0 0 24px;
+  padding: 0;
+  border: 6px solid var(--cream);
+  outline: 3px solid var(--sunset);
+  outline-offset: 6px;
+  background: var(--pine);
+  box-shadow: 0 12px 28px rgba(0, 0, 0, 0.35);
+}
+
+.hero-photo img {
+  display: block;
+  width: 100%;
+  height: auto;
+}
+
+/* Decorative scene band below the hero */
+.scene-band {
+  background: var(--dusk);
+  border-top: 4px solid var(--sunset);
+  border-bottom: 4px solid var(--sunset);
+}
+
+.scene-band .scene {
+  display: block;
+  width: 100%;
+  max-height: 180px;
+  height: auto;
+}
+
+/* --- INTRO --- */
+
+.intro {
+  max-width: 720px;
+  margin: 0 auto;
+  padding: 40px 24px 16px;
+  text-align: center;
+}
+
+.intro p {
+  font-size: 18px;
+  margin: 0;
+}
+
+.intro .names {
+  color: var(--sunset);
+  font-weight: 700;
+}
+
+/* --- ACTIVITY ICON ROW --- */
+
+.activities {
+  max-width: 720px;
+  margin: 0 auto;
+  padding: 24px 24px 8px;
+}
+
+.activity-row {
+  display: flex;
+  justify-content: center;
+  gap: 32px;
+  flex-wrap: wrap;
+}
+
+.activity {
+  text-align: center;
+  color: var(--forest);
+  min-width: 88px;
+}
+
+.activity .icon {
+  width: 72px;
+  height: 72px;
+  display: block;
+  margin: 0 auto 8px;
+  color: var(--forest);
+}
+
+.activity .label {
+  font-family: "Bebas Neue", Impact, sans-serif;
+  letter-spacing: 0.18em;
+  font-size: 16px;
+  text-transform: uppercase;
+}
+
+/* --- FOLLOW / CTA --- */
+
+.follow {
+  text-align: center;
+  background: var(--forest);
+  color: var(--cream);
+  padding: 56px 24px;
+  margin-top: 40px;
+}
+
+.follow .section-label {
+  display: inline-block;
+  background: var(--mustard);
+  color: var(--pine);
+  font-family: "Bebas Neue", Impact, sans-serif;
+  letter-spacing: 0.25em;
+  padding: 6px 14px;
+  font-size: 14px;
+  margin-bottom: 16px;
+}
+
+.follow h2 {
+  color: var(--cream);
+  font-size: clamp(32px, 5vw, 48px);
+  margin-bottom: 12px;
+}
+
+.follow-sub {
+  font-size: 16px;
+  max-width: 480px;
+  margin: 0 auto 24px;
+  opacity: 0.9;
+}
+
+footer {
+  background: var(--pine);
+  color: var(--cream);
+  text-align: center;
+  padding: 16px;
+  font-size: 12px;
+  letter-spacing: 0.2em;
+  text-transform: uppercase;
 }
